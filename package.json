@@ -1,0 +1,35 @@
+{
+  "name": "basic-node",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "14.16.0"
+  },
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "PORT=8080 NODE_ENV=dev node -r esm index.js",
+    "start:prod": "PORT=8080 NODE_ENV=prod node -r esm index.js",
+    "start:local": "nodemon -r esm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commerce-apps/core": "^1.5.2",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "bufferutil": "^4.0.3",
+    "commerce-sdk": "^2.2.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "eiows": "^3.5.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.1",
+    "utf-8-validate": "^5.0.5",
+    "uuid": "^8.3.2"
+  }
+}
